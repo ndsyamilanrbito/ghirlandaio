@@ -91,6 +91,30 @@ setelah sudah semua, cukup all saja dan default 1, dan yang terakhir y
 ## 2.3 Pipwire
 PipeWire merupakan kerangka kerja multimedia tingkat rendah yang digunakan untuk mengelola audio dan video pada sistem Linux. Layanan ini juga dapat dikonfigurasi sebagai server audio maupun server penangkap video. Selain itu, PipeWire mendukung penggunaan container seperti Flatpak dan menggunakan sistem keamanan berbasis izin seperti Polkit untuk mengatur akses perekaman layar maupun audio sehingga lebih aman dan fleksibel digunakan pada desktop Linux modern. 
 
+1. Instalasi PipeWire
+
+   ``` sudo pacman -S pipewire ```. 
+
+2. Menginstal dukungan audio tambahan.
+   
+   ``` sudo pacman -S pipewire-pulse pipewire-alsa pipewire-jack ```
+
+3. Menginstal WirePlumber sebagai session manager.
+
+   ``` sudo pacman -S wireplumber ```
+
+4. Mengaktifkan layanan PipeWire 
+
+   ``` systemctl --user enable pipewire ```
+
+   ``` systemctl --user start pipewire ```
+
+5. Mengaktifkan WirePlumber.
+   
+   ``` systemctl --user enable wireplumber ```
+
+   ``` systemctl --user start wireplumber ```
+
 ## 2.4 Dolphin
 Dolphin merupakan file manager bawaan KDE yang digunakan untuk mengelola file dan folder pada sistem Linux.  Selain itu, Dolphin juga mendukung fitur preview file untuk video, gambar, PDF, audio, dan berbagai format lainnya melalui paket tambahan seperti ffmpegthumbs dan kdegraphics-thumbnailers. Penjelasan Installasi KDE Plasma:
 
