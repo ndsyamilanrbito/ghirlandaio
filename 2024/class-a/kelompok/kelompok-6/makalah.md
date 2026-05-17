@@ -128,8 +128,8 @@ Kitty merupakan emulator terminal berbasis OpenGL yang dapat diprogram dan mendu
    ``` sudo pacman -S kitty ```
 
 2. Setelah instalasi selesai, jalankan Kitty menggunakan
-
-  ``` kitty ```
+  
+   ``` kitty ```
 
 # BAB III PENUTUP
 
