@@ -54,11 +54,62 @@ Informasi ini penting karena langkah instalasi bootloader pada tahap akhir akan 
 
 **Perbedaan UEFI atau BIOS**
 
-**2.3 Perintah UEFI atau BIOS**
+**2.3 Perintah Awal di Live Environment**
 
 Setelah berhasil masuk ke menu UEFI atau Boot Menu, langkah selanjutnya adalah memilih flashdisk bootable yang berisi file instalasi Arch Linux sebagai perangkat boot utama. Setelah dipilih, komputer akan memulai booting dari flashdisk dan menampilkan halaman awal Arch Linux. Pada tahap ini pengguna memilih opsi “Arch Linux install medium” untuk menjalankan live environment Arch Linux. Jika proses berhasil, sistem akan masuk ke tampilan terminal dengan prompt seperti ```root@archiso``` yang menandakan bahwa live environment Arch Linux sudah aktif dan siap digunakan untuk proses instalasi, seperti mengecek koneksi internet, membuat partisi disk, memformat partisi, dan menginstal sistem operasi ke penyimpanan komputer.
 
 **2.4 Menghubungkan Internet**
+Koneksi internet wajib tersedia sebelum memulai instalasi karena Arch Linux mengunduh semua paket sistem langsung dari mirror online saat instalasi. Tanpa internet, proses instalasi tidak dapat dilakukan.
+
+Untuk terhubung ke internet, pastikan interface jaringan sudah aktif dengan perintah ```ip link````. Jika menggunakan Ethernet, cukup colokkan kabelnya. Jika menggunakan Wi-Fi, gunakan iwctl untuk terhubung ke jaringan nirkabel. Setelah terhubung, verifikasi koneksi dengan perintah ```ping ping.archlinux.org```
+
+iwcl merupakan
+
+**2.5 Singkronisasi Waktu**
+Waktu sistem yang akurat penting dalam proses instalasi untuk mencegah kegagalan verifikasi paket dan kesalahan sertifikat TLS (Transport Layer Security). Layanan systemd-timesyncd sudah aktif secara default dan akan otomatis menyinkronkan waktu begitu internet terhubung. Untuk memastikan waktu sudah tersinkronisasi, jalankan perintah timedatectl.
+
+Layanan systemd-timesyncd merupakan
+
+**2.6 Partisi Diks**
+Saat sistem live berjalan, disk yang terpasang di komputer akan otomatis terdeteksi dan diberi nama perangkat blok seperti ```/dev/sda```, ```/dev/nvme0n1```, atau ```/dev/mmcblk0```. Untuk melihat daftar disk yang tersedia dapat menggunakan perintah ```lsblk``` atau ```fdisk -l```.
+
+Terdapat dua partisi yang wajib dibuat yaitu partisi untuk direktori root ```/``` dan partisi EFI untuk pengguna UEFI. Untuk membuat partisi gunakan fdisk:
+
+```fdisk /dev/the_disk_to_be_partitioned```
+
+contoh :
+
+```fdisk /dev/nvme0n1```
+
+
+**Struktur Partisi**
+**UEFI**
+
+
+**BIOS Legacy**
+
+
+**Format Partisi**
+setelah partisi selesai dibuat, setiap partisi harus diformat dengan sistem file yang sesuia agar dapat dogunakan. untuk partisi root, format menggunakan ext4:
+
+```mkfs.ext4 /dev/nvme0n1```
+
+Untuk partisi swap (digunakan sebagai memori candangan ketika RAM penuh), menggunakan perintah:
+
+```mkswap/ dev/nvme0n1p2```
+
+Untuk mengaktifkan swap, gunakan perintah:
+
+```swapon /dev/swap_partition```
+
+Untuk partisi EFI, format ke FAT2 menggunakan perintah:
+
+```mkfs.fat -f 32 /dev/efi_system_partition```
+
+Perlu diperhatikan, format partisi EFI hanya dilakukan jika partisi tersebut baru saja dibuat. Jika sebelumnya sudah ada partisi EFI di disk dari sistem operasi lain, jangan diformat ulang karena dapat merusak bootloader sistem operasi tersebut.
+
+**Mount Filesystem**
+
 
 
 ### 3. Konfigurasi sistem
