@@ -83,7 +83,7 @@ Command:
 sudo pacman -S pipewire
  ```
 
-##2.4 Dolphin
+## 2.4 Dolphin
 Dolphin adalah pengelola file default KDE yang digunakan untuk mengelola file dan folder pada sistem operasi linux, dan dapat memudahkan pengguna dalam melakukan pencarian dan pengelolaan data. Dolphin juga mendukung fitur preview file untuk video, gambar, PDF, audio, dan berbagai format lainnya.
 
 Command:
