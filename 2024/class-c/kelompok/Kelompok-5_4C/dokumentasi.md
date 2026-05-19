@@ -133,7 +133,7 @@ iwctl
 
 # Kondisi Khusus
 
-Apabila daftar perangkat di __iwctl__ tidak menampilkan __wlan0__, __wlan1__, atau yang sejenisnya, dapat mengetik perintah:
+jika daftar perangkat di __iwctl__ tidak menampilkan __wlan0__, __wlan1__, atau yang sejenisnya, dapat mengetik perintah:
 ```bash
 rfkill list
 ```
@@ -209,43 +209,95 @@ ping 8.8.8.8
 
 <img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/5090e3f0-8037-4aff-b1b7-a37ba61bf03c" />
 
-Kalau seperti ini connect ke wifi, jika ga konek network unreachable
+---
+
+Tampilan seperti ini menandakan perangkat berhasil terhubung ke koneksi WiFi. Namun, jika muncul pesan Network Unreachable, berarti koneksi gagal dan perlu dicoba kembali.
 
 
-habis ni ctrl+c
+Setelah koneksi berhasil terhubung, hentikan proses ping dengan menekan __Ctrl + C__ untuk melanjutkan ke tahap berikutnya.
 
 ---
 
 # Sinkronisasi Waktu
 
+Untuk melakukan __Sinkronasi Waktu__, ketik perintah ini:
 ```bash
 timedatectl
 ```
 
 ### Penjelasan
-Jam sistem harus benar agar verifikasi SSL dan package signature tidak gagal.
+Pastikan jam sistem sudah disetel dengan benar, karena hal ini penting agar proses verifikasi SSL dan Package Signature tidak mengalami kegagalan.
 
-untuk partisi pakai lsblk. Untuk melihat partisi yang akan dipakai dari 50 gb tadi
+Untuk melihat daftar partisi, gunakan perintah:
+```bash
+lsblk
+```
+Perintah ini akan menampilkan partisi yang sebelumnya telah disiapkan dari ruang 50GB tadi.
+
+---
+
 <img width="1599" height="899" alt="WhatsApp Image 2026-05-14 at 9 38 07 PM (1)" src="https://github.com/user-attachments/assets/9f64b4ac-1a4c-4a78-b790-edc7dff007af" />
 
-Berikut nya gunakan cfdisk /dev/nvme0n1 (bisa jadi sda sesuai hardisk)
+---
+
+Selanjutnya, jalankan perintah:
+```bash
+cfdisk /dev/nvme0n1
+```
+untuk mengelola partisi.
+
+
+Perlu diperhatikan bahwa nama perangkat bisa berbeda, misalnya __sda__, tergantung dari jenis __harddisk__ yang digunakan.
+
+---
+
 <img width="1599" height="899" alt="WhatsApp Image 2026-05-14 at 9 48 16 PM" src="https://github.com/user-attachments/assets/457b1dc0-da8c-4a58-aa4e-d498013ccb72" />
 
-Geser ke kiri untuk ke new dan masukkan untuk partisinya 512M, 4G, (dan sisa dari berapa partisi)
+---
+
+Geser ke kiri untuk memilih opsi __New__, lalu masukkan ukuran partisi secara berurutan, yaitu __512M__ untuk partisi pertama, __4G__ untuk partisi kedua, dan __sisa ruang__ yang tersedia untuk partisi ketiga.
+
+---
+
 <img width="1599" height="899" alt="WhatsApp Image 2026-05-14 at 9 51 02 PM" src="https://github.com/user-attachments/assets/ae5c3765-8289-44de-a272-af0462f88004" />
 
-Gunakan Tombol ini untuk navigasi (Geser kanan & Kiri)
+---
+
+Gunakan __key__ anak panah kanan & kiri untuk __bernavigasi__ (bergerak ke kanan dan kiri pada tampilan terminal)
+
+---
+
 <img width="1599" height="899" alt="WhatsApp Image 2026-05-14 at 9 51 15 PM" src="https://github.com/user-attachments/assets/74a4787d-52d2-4301-b262-0bc1393d101d" />
 
-Masukan angka 4G, 512M Dan sisa ruang partisi untuk root. Contoh dari 50G Setelah di partisi menjadi sisa 44,3G Maka masukan 44,5G
+---
+
+Masukkan ukuran 512M untuk partisi __EFI__, 4G untuk partisi __Swap__, dan sisa ruang yang tersedia untuk partisi __Root__. 
+
+__Untuk Contoh:__
+-  jika total ruang adalah 50GB dan setelah dipartisi tersisa 44,3G, maka masukkan nilai 44,5G untuk partisi __Root__.
+
+---
 <img width="1599" height="899" alt="WhatsApp Image 2026-05-14 at 9 53 02 PM" src="https://github.com/user-attachments/assets/d06d0474-f66a-4787-8d0b-6ac699c4293f" />
 
-Sebelum enter bagian write, pastikan untuk partisinya sudah di setting type nya (Boot = 512M Untuk EFI System, Swap = 4G Untuk Linux Swap dan sisa ruang partisi (Contoh untuk free disk 50G Sudah kepakai untuk EFI & Swap yaitu 5,7G. Maka untuk sisanya yaitu 44.3G) untuk Root yaitu Linux File System)
+---
+
+Sebelum memilih opsi Write, pastikan setiap partisi sudah diatur tipe nya dengan benar, yaitu:
+- 512M -> EFI System (untuk partisi Boot)
+- 4G -> Linux Swap (untuk partisi Swap)
+- Sisa Ruang ->  Linux Filesystem (untuk partisi Root)
+
+__Sebagai Contoh__
+- jika total ruang bebas adalah 50G dan sudah terpakai 5,7G untuk __EFI__ dan __Swap__, maka sisa ruang untuk __Root__ adalah sekitar 44,3G.
+
+---
+
 <img width="1599" height="899" alt="WhatsApp Image 2026-05-14 at 9 53 54 PM" src="https://github.com/user-attachments/assets/c077b472-9fd4-44a1-8d90-2579adcb9264" />
 
-Setelah write, geser ke opsi quit dan enter
+---
 
-Struktur Partisi yang Disarankan
+Setelah melakukan __write__, geser menggunakan key anak panah ke opsi quit, kemudian enter.
+
+Struktur Partisi yang Disarankan:
 
 UEFI
 
@@ -254,6 +306,8 @@ UEFI
 | `/boot` | EFI Partition |
 | `swap` | Virtual memory |
 | `/` | Root system |
+
+---
 
 Selajutnya masuk ke tahap formating yaitu format partisi, swapping dan format EFI
 
