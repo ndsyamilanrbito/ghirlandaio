@@ -176,7 +176,7 @@ Hostname merupakan nama komputer di jaringan
 Klik i masukan nama komputer, klik esc klik :wq 
 npim /etc/hostname
 ### Generate Initramfs 
-mkinitcpio -P
+`mkinitcpio -P`
 Penjelasan 
 Membuat image boot awal linux 
 ### Pasang Password root
@@ -189,12 +189,14 @@ GRUB
 systemd-boot
 rEFInd
 Install grub 
-![install GRUB]( https://cdn.corenexis.com/files/c/5464744720.jpg) 
-Pacman -S grub efibootmgr dosfstools os-prober mtools
+![install GRUB](https://cdn.corenexis.com/files/c/5464744720.jpg) 
+`Pacman -S grub efibootmgr dosfstools os-prober mtools`
+
 Proses instalasi bootloader ke (sistem/boot) c
-grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+`grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB`
+
 Membuat file konfigurasi grup 
-grub-mkconfig -o /boot/grub/grub.cfg
+`grub-mkconfig -o /boot/grub/grub.cfg`
 ### Reboot 
 Tahap terakhir adalah keluar dari chroot 
 `Exit`
