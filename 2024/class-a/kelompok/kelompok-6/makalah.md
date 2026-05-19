@@ -74,7 +74,7 @@ dalam  menginstall desktop Arch Linux terdapat beberapa komponen penting yang ha
 NetworkManager adalah program yang digunakan untuk mendeteksi dan mengatur konfigurasi jaringan agar sistem dapat terhubung ke internet secara otomatis, baik melalui jaringan kabel maupun nirkabel. Pada jaringan wireless, NetworkManager dapat memprioritaskan jaringan yang sudah dikenal dan secara otomatis berpindah ke jaringan yang lebih stabil, sedangkan pada jaringan kabel layanan ini akan lebih diprioritaskan dibandingkan koneksi wireless. Selain itu, NetworkManager juga mendukung koneksi modem dan beberapa jenis VPN sehingga memudahkan pengguna dalam mengelola berbagai jenis koneksi jaringan pada sistem Linux.
 
 ## 2.2 Plasma
-KDE Plasma merupakan proyek perangkat lunak yang terdiri dari lingkungan desktop KDE Plasma, berbagai aplikasi KDE Applications, serta pustaka tambahan Qt yang disebut KDE Frameworks. KDE Plasma dikenal sebagai desktop environment yang modern, ringan, dan memiliki tampilan antarmuka yang menarik sehingga banyak digunakan pada sistem Linux desktop. Penjelasan Installasi KDE Plasma:
+Plasma adalah produk unggulan KDE, yang menawarkan lingkungan desktop tersedia yang paling dapat disesuaikan. Komunitas KDE mempunyai sasaran untuk membuatnya sederhana secara baku, dan berdaya ketika dibutuhkan. Plasma dirancang agar mudah digunakan, fitur-fitur yang tersedia di plasma itu seperti : Launcer, System Tray, Notification, Dicover dll. Plasma menawarkan lebih banyak fleksibilitas bagi pengguna yang mungkin ingin mengurangi ukuran instalasi mereka di kemudian hari.  KDE Plasma dikenal sebagai desktop environment yang modern, ringan, dan memiliki tampilan antarmuka yang menarik sehingga banyak digunakan pada sistem Linux desktop. Penjelasan Installasi KDE Plasma:
 
 1. Pertama-tama pastinya kita akan masuk ke Arch Linux terlebih dahulu, Jangan lupa untuk selalu memeriksa updetan terbaru
 
@@ -150,3 +150,5 @@ Kitty - ArchWiki. (2026, April 10). https://wiki.archlinux.org/title/Kitty
 NetworkManager - ArchWiki. (2026, Mei 10). https://wiki.archlinux.org/title/NetworkManager
 
 PipeWire - ArchWiki. (2026, Mei 8). https://wiki.archlinux.org/title/PipeWire
+
+Plasma. Diambil 19 Mei 2026, dari https://kde.org/plasma-desktop/
