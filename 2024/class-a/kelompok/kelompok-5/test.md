@@ -131,7 +131,7 @@ mount /dev/nvme0np8 /mnt
 ```
 ### untuk UEFI System mount ke uf system contoh
 ```
-# mount --mkdir /dev/efi_system_partition /mnt/boot
+mount --mkdir /dev/efi_system_partition /mnt/boot
 ```
 
 ## Mirror
