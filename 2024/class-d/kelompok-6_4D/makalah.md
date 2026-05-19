@@ -24,10 +24,12 @@
 ---
 
 #KATA PENGANTAR
+
 Segala puji dan syukur kami panjatkan kepada Tuhan yang Maha Esa karena berkat karunia-Nya kami mampu menyelesaikan tugas makalah ini dengan baik dan tepat waktu. Makalah yang berjudul “INSTALLASI DEKSTOP ARCH LINUX” disusun guna memenuhi tugas Bapak Al Muhdil Karim, S. IP, M. Hum. Pada mata kuliah Perpustakaan dan Arsip Digital.
 Kami menyadari bahwa dalam penulisan makalah ini tidak terlepas dari bantuan banyak pihak, sehingga makalah ini dapat terselesaikan. Kami juga menyadari bahwa makalah ini masih memerlukan penyempurnaan. Oleh karena itu, kami menerima segala bentuk kritik dan saran yang membangun dari berbagai pihak. Apabila terdapat banyak kesalahan pada makalah ini, kami memohon maaf. Demikian yang dapat kami sampaikan. Akhir kata, semoga makalah ini dapat bermanfaat.
 
 #BAB I 
+
 #PENDAHULUAN
 
 ##1.1 LATAR BELAKANG
