@@ -393,7 +393,7 @@ __contoh:__
 
 Setelah proses __Mount__ selesai, kita dapat melanjutkan ke tahap instalasi dengan menjalankan perintah berikut untuk menginstal sistem dasar:
 ```bash
-pacstrap -K /mnt base linux linux-firmware base base-devel iwd
+pacstrap -K /mnt base linux linux-firmware base base-devel networkmanager
 ```
 
 ### Penjelasan
