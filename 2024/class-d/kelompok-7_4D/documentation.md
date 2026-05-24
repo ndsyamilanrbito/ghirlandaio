@@ -65,7 +65,8 @@ root = 49G [linux filesystem/]
 lsblk (lagi)
 ```
 ****
-# partition
+# partition luks on lvm with disk layout CIS
+> adalah partisi yang di luks dan didalamnya terdapat lvm
 ## setup lvm
 ```
 pvcreate /dev/[partisi root]
