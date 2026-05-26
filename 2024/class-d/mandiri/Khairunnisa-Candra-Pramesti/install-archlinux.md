@@ -65,7 +65,25 @@ exit
 umount -R /mnt
 ```
 Reboot
+---
 
+# Pada tahap install plasma saya bisa meng-install sampai step akhir
+```
+desktop
+<img width="1528" height="1528" alt="plasma=desktop" src="https://github.com/user-attachments/assets/ff3ac915-04d2-4c5f-893c-db92c96489ed" />
 
+---
 
+Aduio
+<img width="1528" height="1528" alt="audio" src="https://github.com/user-attachments/assets/320887e2-6703-477a-8df9-6da3db9cc037" />
+
+```
+dolphin
+<img width="1528" height="1528" alt="file manager = dolphin" src="https://github.com/user-attachments/assets/ea8c6dd5-2203-4f1d-a7a6-f304ab28745b" />
+
+network
+<img width="1528" height="1528" alt="network" src="https://github.com/user-attachments/assets/b27f2e43-d542-400b-bc66-cbe882800d1b" />
+
+kitty
+<img width="1528" height="1528" alt="kitty = terminal" src="https://github.com/user-attachments/assets/eb85d73d-2f4d-4577-86bd-6e670ef6be1e" />
 
