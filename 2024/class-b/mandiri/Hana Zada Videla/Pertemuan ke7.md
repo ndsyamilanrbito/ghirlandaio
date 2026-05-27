@@ -1,4 +1,4 @@
-# Intalasi Arch Linux
+# Dokumentasi Intalasi Arch Linux
 <img width="960" height="540" alt="Screenshot 2026-05-27 131944" src="https://github.com/user-attachments/assets/4d760e06-6350-4cd8-b79b-c869b983e446" />
 <img width="960" height="540" alt="Screenshot 2026-05-27 132205" src="https://github.com/user-attachments/assets/aa159379-23d1-4a8f-bb97-fe081d7ae015" />
 <img width="960" height="540" alt="Screenshot 2026-05-27 132247" src="https://github.com/user-attachments/assets/532a2915-49a5-46de-800e-cbbe8d2f4d12" />
@@ -13,4 +13,5 @@
 <img width="1280" height="928" alt="WhatsApp Image 2026-05-27 at 11 08 41" src="https://github.com/user-attachments/assets/b1411690-c3b8-4e3a-926a-9613be8cd249" />
 <img width="1280" height="1046" alt="WhatsApp Image 2026-05-27 at 11 08 59" src="https://github.com/user-attachments/assets/21ef2d16-7bc0-4c1d-8d58-8efda28bd839" />
 <img width="1280" height="1261" alt="WhatsApp Image 2026-05-27 at 11 09 00" src="https://github.com/user-attachments/assets/c26c4e11-1d60-4ee1-9eaa-f70757e13411" />
+<img width="1280" height="942" alt="WhatsApp Image 2026-05-27 at 11 09 02" src="https://github.com/user-attachments/assets/830faef6-8f35-4a63-96ed-45bc8c874594" />
 
