@@ -3,7 +3,7 @@
 ## Mata Kuliah: Perpustakaan dan Arsip Digital
 ## Dosen Pengampu: Al Muhdil Karim, S. IP., M.Hum
 ## Penjelasan bersumber dari dosen Perpustakaan dan Arsip Digital
-1.	Boot (Booster): Nah, ini fungsinya sebagai generator atau kernel/initramfs. Jadi pas kita pencet tombol power, setelah lewat BIOS dan bootloader, masuklah ke proses ini. Tugas utamanya itu buat ngerubah bahasa manusia (huruf/angka) jadi bahasa mesin atau biner (0 dan 1) supaya bisa dibaca sama prosesor.
+1.	Boot (Booster): Ini fungsinya sebagai generator atau kernel/initramfs. Jadi pas kita pencet tombol power, setelah lewat BIOS dan bootloader, masuklah ke proses ini. Tugas utamanya itu buat ngerubah bahasa manusia (huruf/angka) jadi bahasa mesin atau biner (0 dan 1) supaya bisa dibaca sama prosesor.
 2.	Disk Encryption (LUKS on LVM): LUKS itu aplikasi buat enkripsi di layer hardware, jadi hard disk-nya yang dikunci, bukan cuma datanya. Kalau hard disk-nya dicabut terus dipasang di laptop lain, datanya nggak bakal bisa dibaca selama nggak tahu password-nya. Nah, kalau LUKS on LVM, ini strategi yang cocok buat sistem kearsipan. Kenapa? Karena di arsip itu nggak semua data harus dikunci. Kita bisa milih partisi mana aja yang rahasia buat di-enkripsi, jadi lebih fleksibel.
 3.	Desktop (XFCE): Ini salah satu pilihan Desktop Environment atau "muka" buat komputer kita. Kalau mau yang simpel pakainya GNOME, kalau mau yang agak fancy pakainya Plasma. Nah, XFCE ini alternatif lainnya kalau teman-teman mau ganti tampilan kalau sudah bosan.
 4.	File Manager (Superfile): Ini itu kayak Windows Explorer-nya terminal. Karena nanti kita bakal ngurusin server yang nggak ada tampilannya (CLI), kita butuh alat ini buat navigasi file di terminal tanpa harus pakai UI yang ribet.
