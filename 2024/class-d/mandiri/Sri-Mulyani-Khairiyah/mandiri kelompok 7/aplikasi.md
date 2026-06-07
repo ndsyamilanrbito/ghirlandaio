@@ -3,6 +3,8 @@
 ##### Kelas       : 4D
 ##### Mata Kuliah : Perpustakaan dan Arsip Digital
 
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-07 at 09 32 01" src="https://github.com/user-attachments/assets/ccf672f5-4ed4-471c-988e-f2088ed09e80" />
+
 <img width="1600" height="1200" alt="WhatsApp Image 2026-06-07 at 08 59 52" src="https://github.com/user-attachments/assets/4c7ac211-f981-46c6-919e-72ff9e1b5260" />
 
 <img width="1600" height="1200" alt="WhatsApp Image 2026-06-07 at 08 59 52 (1)" src="https://github.com/user-attachments/assets/a636e2d6-18bf-4f1e-b117-172939e19df6" />
@@ -37,6 +39,7 @@
 
 <img width="1600" height="900" alt="WhatsApp Image 2026-06-07 at 09 11 33 (1)" src="https://github.com/user-attachments/assets/353c0092-6e9d-406b-94aa-f0550036987e" />
 
+<img width="1599" height="899" alt="WhatsApp Image 2026-06-07 at 09 24 17" src="https://github.com/user-attachments/assets/59ea6b7e-b0f2-41c8-8eaa-c971a8d5854f" />
 
 
 
