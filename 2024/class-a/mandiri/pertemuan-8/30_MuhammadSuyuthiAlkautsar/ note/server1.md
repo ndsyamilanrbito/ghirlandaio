@@ -126,6 +126,8 @@ https://httpd.apache.org/docs/current/zh-cn/sitemap.html
 masukan folder web di sini
 
 
+https://wiki.archlinux.org/title/Apache_HTTP_Server#Using_php-fpm_and_mod_proxy_fcgi
+
 php-fpm-legacy
 
 ```
