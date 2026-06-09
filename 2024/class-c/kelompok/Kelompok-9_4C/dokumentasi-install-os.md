@@ -252,5 +252,28 @@ umount -R /mnt
 ```
 reboot
 ```
+---
 
+# after installation
+
+## disable module
+
+```
+nvim /etc/modprobe.d/hardening.conf
+```
+
+> isi
+
+```
+install    cramfs           /bin/false
+install    freexfs          /bin/false
+install    hfs              /bin/false
+install    hfsplus          /bin/false
+install    jffs2            /bin/false
+install    udf              /bin/false
+install    fire-wire-core   /bin/false
+install    usb_storage      /bin/false
+```
+
+## setup firewalld
 
