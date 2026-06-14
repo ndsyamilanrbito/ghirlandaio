@@ -441,6 +441,162 @@ umount -R /mnt
 reboot
 ```
 
+# Cara Penggunaan Aplikasi  
+
+## KEEPASXC
+
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-03 at 6 50 04 AM" src="https://github.com/user-attachments/assets/dfa4e3b9-0dab-4509-bd41-d11c700c94fe" />
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-03 at 6 50 25 AM" src="https://github.com/user-attachments/assets/773c92f6-a17f-4e3b-a2bd-381e2147ff16" />
+
+Masukkan nama database dan password database
+
+<img width="1015" height="1280" alt="WhatsApp Image 2026-06-03 at 6 52 52 AM" src="https://github.com/user-attachments/assets/ef2e9138-ca4c-435f-a0c1-3494c022fb0f" />
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-03 at 6 51 23 AM" src="https://github.com/user-attachments/assets/9162cf0e-38e1-4cd6-a008-976f8842defd" />
+
+Input data login, lalu otomatis data login akan tersimpan di database
+
+---
+## SECRETS
+
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-03 at 6 54 51 AM" src="https://github.com/user-attachments/assets/698cc991-7b7f-4d9e-89a0-4849d46b58b3" />
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-03 at 6 54 10 AM" src="https://github.com/user-attachments/assets/ae8a08d8-64bc-4ecf-8e90-fabf8c6e5554" />
+
+Buka aplikasi secrets dan akses kembali database berformat .kdbx yang sudah dibuat di aplikasi KeepassXC lalu masukkan password saat 
+membuat database di KeepasXC. 
+
+---
+## MPV
+
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-03 at 6 57 37 AM" src="https://github.com/user-attachments/assets/e913bc76-a978-4d2b-8170-104306570caa" />
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-03 at 6 58 21 AM" src="https://github.com/user-attachments/assets/ca57a4d7-bab1-481e-b269-c9e509c2d3c3" />
+
+```
+MPV (link video yang akan ditonton)
+```
+---
+## SUPERFILE
+
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-03 at 6 59 51 AM" src="https://github.com/user-attachments/assets/b01e4972-3684-4766-948c-8ff05b7fe62e" />
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-03 at 7 00 11 AM" src="https://github.com/user-attachments/assets/cee33165-d8d7-4ac4-bb22-3bbedd8d0de9" />
+
+```
+spf
+```
+
+Lalu buat folder baru
+
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-03 at 7 01 20 AM" src="https://github.com/user-attachments/assets/e0e3c7ea-2a28-4e78-af5b-2d60000bf61a" />
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-03 at 7 03 18 AM" src="https://github.com/user-attachments/assets/9f4db7a2-294b-4bf9-8906-d1fb640e5cf4" />
+
+```
+mkdir (nama folder)
+```
+
+> Nama folder tidak boleh menggunakan spasi, agar tidak menjadi folder yang  berbeda.
+
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-03 at 7 04 07 AM" src="https://github.com/user-attachments/assets/9df82de2-c3b3-4ed3-b393-f6928953c3bb" />
+
+Untuk menghapus folder yang sudah ada.
+
+```
+rm -r (nama folder)
+```
+---
+
+## IP TABLES
+
+<img width="1280" height="720" alt="WhatsApp Image 2026-06-03 at 7 05 00 AM" src="https://github.com/user-attachments/assets/3467e721-f339-4395-b992-c4d8d606340d" />
+
+Untuk masuk ke aplikasi iptables, ketik:
+
+```
+sudo iptables -L -n
+```
+> Digunakan untuk menampilkan daftar rule dan alamat IP dan port dalam bentuk angka.
+
+Untuk menambahkan rule ke dalam iptables, ketik:
+
+```
+sudo iptables -A (Chain) -p (protokol) --dport (nomor_port) -j (target)
+```
+
+> Chain bisa berupa INPUT, OUTPUT, FORWARD.
+> Protokol bisa berupa tcp, udp, icmp.
+> Target bisa berupa ACCEPT, DROP, REJECT.
+
+## MPD dan MPC
+<img width="1280" height="513" alt="mpd" src="https://github.com/user-attachments/assets/508bccaa-390d-4778-9d0c-67ad02f5c4b5" />
+
+```
+mpd
+```
+```
+mpc update 
+```
+Untuk mengupdate musik dan akan ada tulisan update
+
+```
+mpc add namafile.mp3
+```
+Menambahkan musik dengan mengetik add nama file dengan format mp3 dan file musik ini di pastikan sudah dalam keadaan terdownload dan masuk ke folder tersendiri musik
+
+```
+mpc play
+```
+
+Untuk memutar (Playing) musik
+
+```
+mpc pause
+mpc stop
+```
+Dan jika ingin mengpause musiknya ketik pause dan untuk mengstop musiknya ketik stop
+
+
+## Open SSH
+<img width="1280" height="819" alt="openssh" src="https://github.com/user-attachments/assets/6ede2694-f461-4012-8dc6-54280a89621e" />
+
+OpenSSH ini dapat di lakukkan jika yang ingin diremot harus satu koneksi atau satu wifi agar bisa di remot
+
+```
+sudo systemctl start sshd
+```
+
+Untuk memulai ssh
+
+```
+sudo systemctl status sshd
+```
+
+Untuk mengecek apakah ssh nya aktif atau tidak, dilihat dari tulisan bagian yang berwarna hijau jika active (running) itu berarti ssh nya aktif
+
+```
+ip address
+```
+
+Melihat alamat inet untuk yang ingin diremot
+
+```
+ssh user@nomor inet
+```
+
+Setelah memasukkan user dan nomor inet masukkan password dari usernya
+
+Dan jika sudah selesai meremot dan ingin melogout
+
+```
+exit
+```
+
+dan akan ke logout dan akan ada tulisan connecting to (nomor inet) closed tandanya udah ke logout
+
+
+
+
+
+
+
+
 
 
 
