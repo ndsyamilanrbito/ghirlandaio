@@ -115,6 +115,8 @@ sudo chmod -R 777 app/slims
 ```
 podman compose up -d
 ```
+## bila berhasil runing, cek apakah slims kalian berhasil atau tidak
+
 ```
 http://ip:8080
 ```
