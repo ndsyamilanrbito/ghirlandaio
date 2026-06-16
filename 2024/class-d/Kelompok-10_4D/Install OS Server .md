@@ -4,6 +4,7 @@
 ```
 iwctl 
 ```
-
-station wlan0 get-networks
+```
+station wlan0 get-network 
+```
 
