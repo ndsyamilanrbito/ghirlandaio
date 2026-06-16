@@ -120,3 +120,8 @@ podman compose up -d
 ```
 http://ip:8080
 ```
+
+### cp 
+https://github.com/slims/docker-compose-for-slims
+
+https://wiki.archlinux.org/title/Podman
